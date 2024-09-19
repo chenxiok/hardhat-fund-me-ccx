@@ -1,0 +1,38 @@
+{
+  "name": "hardhat-fund-me",
+  "auther": "chenxi",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@chainlink/contracts": "^0.4.0",
+    "@comiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers",
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
+    "@nomicfoundation/hardhat-ethers": "^3.0.0",
+    "@nomicfoundation/hardhat-ignition": "^0.15.0",
+    "@nomicfoundation/hardhat-ignition-ethers": "^0.15.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.0",
+    "@typechain/ethers-v6": "^0.5.0",
+    "@typechain/hardhat": "^9.0.0",
+    "chai": "^4.3.4",
+    "ethers": "^6.0.0",
+    "hardhat": "^2.6.0",
+    "hardhat-deploy": "^0.9.0",
+    "hardhat-deploy-ethers": "^0.4.2",
+    "hardhat-gas-reporter": "^1.0.8",
+    "solhint": "^5.0.3",
+    "solidity-coverage": "^0.8.0",
+    "typechain": "^8.3.0"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0"
+  },
+  "scripts": {
+    "test": "yarn hardhat test",
+    "test:staging": "yarn hardhat test --network sepolia",
+    "lint": "yarn solhint 'contracts/*.sol'",
+    "lint:fix": "yarn solhint 'contracts/*.sol' --fix",
+    "format": "yarn prettier --write .",
+    "coverage": "yarn hardhat coverage"
+  }
+}
